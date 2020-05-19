@@ -4,7 +4,20 @@
 # Output: True (permutations: "taco cat". "atco cta". etc.) Hints: #106, #121, #134, #136
 
 
-def palindrome(s):
+#Palindrom with String
+def palindrome_s(s):
+    s = s.replace(' ', '')
+    rev = s[::-1].replace(' ', '')
+    if s == rev:
+        print("Palindrome")
+    else:
+        print("Not a palindrome")
+
+# palindrome_s("taco cat")
+
+
+#Palindrom with list
+def palindrome_l(s):
     if isinstance(s, str):
         s = s.replace(' ', '')
         orig = list(s)
@@ -14,5 +27,15 @@ def palindrome(s):
         else:
             print("Not a palindrome")
 
+# palindrome_l("taco cat")
 
-palindrome("taco cat")
+
+# Doing Palindrome for a number
+def palindrome_n(s):
+    rev = int(str(s)[::-1])
+    if s == rev:
+        print("Palindrome")
+    else:
+        print("Not a palindrome")
+
+# palindrome_n(99699)
