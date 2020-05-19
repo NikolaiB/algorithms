@@ -1,3 +1,5 @@
+Cracking the coding interview 6th edition solutions in Python
+
 Chapter 1 I Arrays and Strings
 
 1.1 Is Unique: Implement an algorithm to determine if a string has all unique characters.
