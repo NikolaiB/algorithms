@@ -12,3 +12,18 @@ def calc(arr):
 
 
 print(calc('the quick brown fox jumps over the lazy dog.'))
+
+
+def count():
+    with open('test.txt', 'r') as text:
+        res = text.read()
+        c = dict()
+        for word in res.split():
+            if word in c:
+                c[word] +=1
+            else:
+                c[word] = 1
+
+        return c
+
+# print(count())
