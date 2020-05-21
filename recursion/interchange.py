@@ -8,7 +8,7 @@ def gen_simple(M, prefix=""):
             gen_simple(M - 1, prefix + i)
 
 
-gen_simple(3)
+# gen_simple(3)
 
 # N - число, в пределах которого делать перестановки,
 # M - число, количество набора комбинаций в строке
@@ -21,5 +21,6 @@ def gen_number(N:int, M:int, prefix=None):
         prefix.append(dig)
         gen_number(N, M-1, prefix)
         prefix.pop()
+
 
 gen_number(4, 4)
